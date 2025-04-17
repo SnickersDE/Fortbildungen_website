@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortbildungen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Fortbildungen</h1>
+        <nav>
+            <ul>
+                <li><a href="#themen">Themen</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="themen">
+            <h2>Themenbereiche</h2>
+            <div class="thema" onclick="zeigeThema('medienpaedagogik')">
+                <img src="images/medienpaedagogik.jpg" alt="Medienpädagogik">
+                <p>Medienpädagogik</p>
+            </div>
+            <div class="thema" onclick="zeigeThema('medien_schule')">
+                <img src="images/medien_schule.jpg" alt="Medien im Schullalltag">
+                <p>Medien im Schullalltag</p>
+            </div>
+            <div class="thema" onclick="zeigeThema('konzept_ogts')">
+                <img src="images/konzept.jpg" alt="Konzeptentwicklung">
+                <p>Konzeptentwicklung im offenen Ganztag</p>
+            </div>
+            <div class="thema" onclick="zeigeThema('fakenews')">
+                <img src="images/fakenews.jpg" alt="Fake News">
+                <p>Fake News</p>
+            </div>
+            <div class="thema" onclick="zeigeThema('medienschulung')">
+                <img src="images/medienschulung.jpg" alt="Medienschulung">
+                <p>Medienschulung</p>
+            </div>
+        </section>
+
+        <section id="anzeige">
+            <h3 id="thema-titel"></h3>
+            <iframe id="pdf-viewer" src="" width="100%" height="500px"></iframe>
+            <div id="downloads"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
