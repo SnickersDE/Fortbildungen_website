@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Konflikt-Quiz – Ausbildung</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: #f9fafb;
+      color: #111;
+    }
+    h1, h2 {
+      color: #1f2937;
+    }
+    .league {
+      background: #ffffff;
+      border-left: 6px solid #2563eb;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .question {
+      margin: 15px 0;
+    }
+    button {
+      display: block;
+      width: 100%;
+      margin: 6px 0;
+      padding: 10px;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      background: #f3f4f6;
+      cursor: pointer;
+      text-align: left;
+    }
+    button:hover {
+      background: #e5e7eb;
+    }
+    button.correct {
+      background: #dcfce7;
+      border-color: #16a34a;
+    }
+    button.wrong {
+      background: #fee2e2;
+      border-color: #dc2626;
+    }
+    .explain {
+      margin-top: 5px;
+      font-size: 0.9em;
+      color: #374151;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 0.85em;
+      color: #6b7280;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Quiz: Umgang mit Konflikten in der Ausbildung</h1>
+<p>Berufspädagogisches Kurzquiz mit steigender Schwierigkeit.</p>
+
+<!-- LEAGUE 1 -->
+<div class="league">
+  <h2>League 1 – Grundlagen</h2>
+
+  <div class="question">
+    <p><strong>1. Was versteht man unter einem sozialen Konflikt?</strong></p>
+    <button onclick="right(this)">Ein Aufeinandertreffen unvereinbarer Interessen oder Erwartungen</button>
+    <button onclick="wrong(this)">Ein persönliches Scheitern</button>
+    <button onclick="wrong(this)">Ein einmaliges Missverständnis ohne Folgen</button>
+    <div class="explain hidden">
+      Konflikte entstehen, wenn Interessen, Ziele oder Werte nicht gleichzeitig erfüllbar erscheinen.
+    </div>
+  </div>
+
+  <div class="question">
+    <p><strong>2. Warum sind Konflikte in der Ausbildung besonders häufig?</strong></p>
+    <button onclick="right(this)">Unterschiedliche Rollen, Erwartungen und Machtverhältnisse</button>
+    <button onclick="wrong(this)">Zu wenig Lernstoff</button>
+    <button onclick="wrong(this)">Weil Auszubildende konfliktreicher sind</button>
+    <div class="explain hidden">
+      Ausbildungssettings vereinen Lern-, Arbeits- und Bewertungsrollen – das erhöht Konfliktpotenzial.
+    </div>
+  </div>
+</div>
+
+<!-- LEAGUE 2 -->
+<div class="league">
+  <h2>League 2 – Praxis</h2>
+
+  <div class="question">
+    <p><strong>3. Welche Haltung wirkt deeskalierend in Konfliktgesprächen?</strong></p>
+    <button onclick="right(this)">Aktives Zuhören und Trennung von Person und Problem</button>
+    <button onclick="wrong(this)">Sachliche Dominanz zeigen</button>
+    <button onclick="wrong(this)">Ironie zur Auflockerung</button>
+    <div class="explain hidden">
+      Zuhören signalisiert Anerkennung, ohne das Verhalten zu rechtfertigen.
+    </div>
+  </div>
+
+  <div class="question">
+    <p><strong>4. Welche Aufgabe hat die Ausbilderin / der Ausbilder im Konflikt?</strong></p>
+    <button onclick="right(this)">Moderation und Lernanstoß ermöglichen</button>
+    <button onclick="wrong(this)">Neutral bleiben und nichts tun</button>
+    <button onclick="wrong(this)">Sofort entscheiden, wer Recht hat</button>
+    <div class="explain hidden">
+      Konflikte sind pädagogische Lerngelegenheiten – keine reinen Störfaktoren.
+    </div>
+  </div>
+
+  <div class="question">
+    <p><strong>5. Welche Frage unterstützt eine lösungsorientierte Gesprächsführung?</strong></p>
+    <button onclick="right(this)">Was brauchst du, damit die Situation besser wird?</button>
+    <button onclick="wrong(this)">Warum hast du das falsch gemacht?</button>
+    <button onclick="wrong(this)">Wer ist hier schuld?</button>
+    <div class="explain hidden">
+      Lösungsfragen öffnen Handlungsspielräume statt Rechtfertigungen zu erzwingen.
+    </div>
+  </div>
+</div>
+
+<!-- LEAGUE 3 -->
+<div class="league">
+  <h2>League 3 – Profi / Uni-Niveau</h2>
+
+  <div class="question">
+    <p><strong>6. Wann ist eine externe Mediation pädagogisch sinnvoll?</strong></p>
+    <button onclick="right(this)">Bei festgefahrenen Konflikten oder starken Machtasymmetrien</button>
+    <button onclick="wrong(this)">Bei jeder Meinungsverschiedenheit</button>
+    <button onclick="wrong(this)">Nur bei rechtlichen Verstößen</button>
+    <div class="explain hidden">
+      Externe Instanzen schaffen Distanz, wenn interne Rollen blockieren.
+    </div>
+  </div>
+
+  <div class="question">
+    <p><strong>7. Welche Funktion haben Konflikte aus berufspädagogischer Sicht?</strong></p>
+    <button onclick="right(this)">Sie ermöglichen Entwicklungs- und Lernprozesse</button>
+    <button onclick="wrong(this)">Sie sollten immer vermieden werden</button>
+    <button onclick="wrong(this)">Sie zeigen mangelnde Disziplin</button>
+    <div class="explain hidden">
+      Konflikte sind strukturbedingt – entscheidend ist ihr konstruktiver Umgang.
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© Konflikt-Quiz Berufspädagogik – geeignet für Kurzvorträge & Lehre</p>
+</footer>
+
+<script>
+  function right(btn) {
+    btn.classList.add("correct");
+    showExplanation(btn);
+    disableSiblings(btn);
+  }
+
+  function wrong(btn) {
+    btn.classList.add("wrong");
+    showExplanation(btn);
+    disableSiblings(btn);
+  }
+
+  function showExplanation(btn) {
+    const explain = btn.parentElement.querySelector(".explain");
+    explain.classList.remove("hidden");
+  }
+
+  function disableSiblings(btn) {
+    const buttons = btn.parentElement.querySelectorAll("button");
+    buttons.forEach(b => b.disabled = true);
+  }
+</script>
+
+</body>
+</html>
